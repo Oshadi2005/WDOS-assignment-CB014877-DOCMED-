@@ -1,0 +1,69 @@
+.header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(IMAGES/mainimagedoct.jpg);
+}
+
+.doctors {
+    text-align: center;
+    padding: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 350px)); /* Corrected the minmax order */
+    gap: 40px;
+    padding: 20px;
+    margin: 50px ;
+}
+
+.doctor-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 150px; /* Set the width to your desired square size */
+    height: 190px; /* Set the height equal to the width */
+    object-fit: cover; /* Ensures the image is cropped to fit the square without distortion */
+    border-radius: 2px; /* this is to make the bordes curve */
+    margin-bottom: 15px;
+}
+
+.doctor-card h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    color: #555;
+    font-size: 1em;
+}
+
+@media (max-width: 700px) {
+    .doctor-card{
+        width: 220px;
+        object-fit: cover;
+    }
+    .doctors h1 {
+        font-size: 2rem;
+    }
+
+    .doctor-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .doctor-card p {
+        font-size: 0.9rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-card img {
+        width: 100px;
+        height: 120px;
+    }
+}

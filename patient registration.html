@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Reservation Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="patient registation.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="homepage.html"><img src="IMAGES/logo.png" alt="DOCMED Hospitals Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="consulting.html">Consulting Reservation</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="patient registration.html">Patient Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>PATIENT RESERVATION</h1>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Patient Registration Form</h2>
+            <form action="#">
+                <label for="name">Patient Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="gender">Gender:</label>
+                <div class="gender-group">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter phone number">
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="address">Patient Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+    
+                <label for="medication">Any Medication Undertaking:</label>
+                <textarea id="medication" name="medication" rows="2"></textarea>
+    
+                <label for="allergies">Any Allergies:</label>
+                <textarea id="allergies" name="allergies" rows="2"></textarea>
+    
+                <div class="button-group">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="IMAGES/logo.png" alt="DOCMED Hospitals Logo" class="footer-logo">
+                <h3>DOCMED Hospitals, Sri Lanka</h3>
+                <p>DOCMED Hospitals has embarked on a digital journey to be Sri Lanka’s No.1 Smart Hospital. We have already introduced many innovative digital health solutions including Telemedicine, Online pharmacy, Online laboratory portal, and Tele physiotherapy.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact us</h3>
+                <ul>
+                    <li><span class="icon">&#x260E;</span> 0117 888 888</li>
+                    <li><span class="icon">&#x2709;</span> info@DOCMED.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

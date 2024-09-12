@@ -1,0 +1,212 @@
+:root {
+    --background-color: rgb(41, 79, 111);
+    --text-align: center;
+    --heading: #ffffff;
+    --txt-color: white;
+    --txt-box_color: #1f3744;
+    --footer-color: rgb(58, 58, 134);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 6px 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999; /* Ensures the nav bar stays above other elements */
+    background-color: var(--txt-box_color); /* Adds a background for clarity */
+    position: relative;
+}
+
+nav img {
+    width: 80px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 3px 10px;
+    position: relative;
+    height: 9px;
+}
+
+.nav-links ul li a {
+    color: var(--txt-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #cfd7df;
+    display: block;
+    margin: auto;
+    transition: width 0.3s ease;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+}
+
+.intro-text, .intro-text2 {
+    font-size: 24px;
+    color: var(--txt-color);
+}
+
+.content h1 {
+    margin-top: 80px;
+    font-size: 100px;
+    font-weight: 500;
+    color: var(--heading);
+    animation: fadeIn 1s ease-in-out;
+}
+.content p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.intro {
+    background-color: var(--txt-box_color);
+    width: 100%;
+    padding: 20px 2px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.intro p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.footer-left, .footer-right {
+    width: 45%;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.footer-left h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-right h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-right ul {
+    list-style: none;
+}
+
+.footer-right ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-right ul li .icon {
+    margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 2% 5%;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .nav-links ul li {
+        display: block;
+        text-align: center;
+        padding: 10px; /* Increased padding for better tap targets */
+    }
+
+    .content h1 {
+        font-size: 8vw; /* More responsive font size */
+    }
+
+    .intro {
+        padding: 20px;
+        text-align: center;
+        width: 400px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center; /* Center text in smaller screens */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

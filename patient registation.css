@@ -1,0 +1,103 @@
+.header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(IMAGES/patientregistration.png);
+    height: 70vh;
+}
+body{
+    background-color: aliceblue;
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: aliceblue;
+    background-size: cover;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], textarea, select {
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+    gap: 90px; /* Adding spacing between male and female options */
+}
+
+.gender-group div {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 20px;
+    align-items: center;
+    transform: scale(1.2); /* this is to increase radio button size for better visibility */
+
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #237a37;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button[type="reset"] {
+    background-color: #d72133;
+}
+
+button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button:last-child {
+        margin-bottom: 0;
+    }
+}

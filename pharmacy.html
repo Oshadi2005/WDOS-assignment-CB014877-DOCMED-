@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pharmacy.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="homepage.html"><img src="IMAGES/logo.png" alt="DOCMED Hospitals Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="consulting.html">Consulting Reservation</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="patient registration.html">Patient Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>OUR PHARMACY</h1>
+        </div>
+    </section>
+    <section class="pharmacy-form">
+        <h1>Buy Medicine from Hospital Pharmacy</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="medicine">Select Medicine:</label>
+                <select id="medicine" name="medicine" required>
+                    <option value="">Select Medicine</option>
+                    <option value="aspirin">Aspirin</option>
+                    <option value="ibuprofen">Ibuprofen</option>
+                    <option value="paracetamol">Paracetamol</option>
+                    <option value="Acetaminophen">Acetaminophen</option>
+                    <option value="Ibuprofen">Ibuprofen</option>
+                    <option value="Naproxen">Naproxen</option>
+                    <option value="Diphenhydramine">Diphenhydramine</option>
+                    <option value="amoxicillin">Amoxicillin</option>
+            
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Any additional Information..."></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <button type="reset" class="clear-button">Clear Form</button>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="IMAGES/logo.png" alt="DOCMED Hospitals Logo" class="footer-logo">
+                <h3>DOCMED Hospitals, Sri Lanka</h3>
+                <p>DOCMED Hospitals has embarked on a digital journey to be Sri Lanka’s No.1 Smart Hospital. We have already introduced many innovative digital health solutions including Telemedicine, Online pharmacy, Online laboratory portal, and Tele physiotherapy.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact us</h3>
+                <ul>
+                    <li><span class="icon">&#x260E;</span> 0117 888 888</li>
+                    <li><span class="icon">&#x2709;</span> info@DOCMED.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

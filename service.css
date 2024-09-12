@@ -1,0 +1,87 @@
+
+.header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(IMAGES/services\ main\ image.png);
+}
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    flex: 1 1 calc(40%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+.service img {
+    max-width: 400px;/* The max-width of the image  */
+    height: 300px; /* The height of the image  */
+    margin-bottom: 15px;
+}
+
+.service {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+  
+/* Link to Registration Page */
+.registration-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.registration-link a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #176c6c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.registration-link a:hover {
+    background-color: #144454;
+}
+@media (max-width: 768px) {
+    .services-container {
+        padding: 30px 10px;
+    }
+
+    .intro2 h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro2 p {
+        font-size: 1rem;
+    }
+    .service {
+        flex: 1 1 calc(100%); /* to stack services vertically on mobile view */
+        margin-bottom: 20px;
+    }
+
+}
