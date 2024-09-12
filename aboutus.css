@@ -112,6 +112,9 @@ table tfoot td {
     .branch iframe{
         width: 400px;
     }
+     .branch p{
+        width: 300px;
+    }
     .branch img{
         height: 200px;
         width: 300px;
