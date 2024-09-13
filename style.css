@@ -11,6 +11,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; /* Ensure padding and borders are within the width/height */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Remove any body-level margin/padding */
 }
 
 .header {
@@ -76,8 +83,11 @@ nav img {
 .content {
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 35%; /* Adjust this as needed */
+    left: 0;
+    right: 0;
     text-align: center;
+    margin: 0;
 }
 
 .intro-text, .intro-text2 {
@@ -92,10 +102,10 @@ nav img {
     color: var(--heading);
     animation: fadeIn 1s ease-in-out;
 }
+
 .content p {
     animation: fadeIn 2s ease-in-out;
 }
-
 
 .intro {
     background-color: var(--txt-box_color);
@@ -156,6 +166,8 @@ footer {
 
 .footer-right ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-right ul li {
@@ -209,4 +221,5 @@ footer {
         opacity: 1;
     }
 }
+
 
