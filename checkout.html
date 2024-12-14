@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+
+    
+</head>
+<body>
+    <h2>Checkout</h2>
+
+    <!-- Cart Section -->
+    <h2>Cart Details</h2>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items will be dynamically loaded here -->
+        </tbody>
+    </table>
+    <p><strong>Overall Total:</strong> <span id="overall-total">$0.00</span></p>
+
+    <!-- Payment Form -->
+    <form id="payment-form">
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required aria-required="true">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required aria-required="true">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Details:</legend>
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Address" required aria-required="true">
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="City" required aria-required="true">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information:</legend>
+            <div>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required aria-required="true">
+                    <option value="">Select payment method</option>
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                </select>
+            </div>
+
+            <div id="card-details-container" style="display: none;">
+                <div>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Card Number" pattern="[0-9]{16}">
+                </div>
+                <div>
+                    <label for="card-pin">Card PIN:</label>
+                    <input type="password" id="card-pin" name="card-pin" placeholder="Card PIN" pattern="[0-9]{4}">
+                </div>
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Amount" min="1">
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit" id="pay">Pay</button>
+    </form>
+
+    <script src="scripts/checkout.js"></script>
+    <script src="scripts/Pharmacy.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="IMAGES/logo.png" alt="DOCMED Hospitals Logo" class="footer-logo">
+                <h3>DOCMED Hospitals, Sri Lanka</h3>
+                <p>DOCMED Hospitals has embarked on a digital journey to be Sri Lanka’s No.1 Smart Hospital. We have already introduced many innovative digital health solutions including Telemedicine, Online pharmacy, Online laboratory portal, and Tele physiotherapy.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact us</h3>
+                <ul>
+                    <li><span class="icon">&#x260E;</span> 0117 888 888</li>
+                    <li><span class="icon">&#x2709;</span> info@DOCMED.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Page</title>
+    <title>Pharmacy page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pharmacy.css">
+    <link rel="stylesheet" href="Pharmacy.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -21,7 +21,7 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutus.htm    l">About Us</a></li>
                     <li><a href="service.html">Our Services</a></li>
                     <li><a href="doctors.html">Our Doctors</a></li>
                     <li><a href="consulting.html">Consulting Reservation</a></li>
@@ -31,69 +31,237 @@
             </div>
         </nav>
         <div class="content">
-            <h1>OUR PHARMACY</h1>
+            <h1>PHARMACY ORDER PAGE</h1>
         </div>
     </section>
-    <section class="pharmacy-form">
-        <h1>Buy Medicine from Hospital Pharmacy</h1>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" required>
+    <main>
+        <section id="medicine-categories">
+            <div class="category">
+                <h2>Analgesics</h2>
+                <div class="medicine-item">
+                    <label for="analgesic1">Paracetamol (Rs1000):</label>
+                    <input type="number" id="analgesic1" min="0" value="0">
+                    <img src="IMAGES/Paracetamol.jpg">
+                    <button class="add-to-cart" data-name="Paracetamol" data-price="1000">Add to Cart</button>
+                </div>                
+                <div class="medicine-item">
+                    <label for="analgesic2">Aspirin (Rs2000):</label>
+                    <input type="number" id="analgesic2" min="0" value="0">
+                    <img src="IMAGES/Aspirin.jpg" >
+                    <button class="add-to-cart" data-name="Aspirin" data-price="2000">Add to Cart</button>
+                </div> 
+                <div class="medicine-item">
+                    <label for="analgesic3">Naproxen (Rs900):</label>
+                    <input type="number" id="analgesic3" min="0" value="0">
+                    <img src="IMAGES/Naproxen.jpg" alt="Naproxen">
+                    <button class="add-to-cart" data-name="Naproxen" data-price="900">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="analgesic4">Tramadol (Rs1000):</label>
+                    <input type="number" id="analgesic4" min="0" value="0">
+                    <img src="IMAGES/Tramadol.jpg" alt="Tramadol">
+                    <button class="add-to-cart" data-name="Tramadol" data-price="1000">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="analgesic5">Morphine (Rs500):</label>
+                    <input type="number" id="analgesic5" min="0" value="0">
+                    <img src="IMAGES/Morphine.jpg" alt="Morphine">
+                    <button class="add-to-cart" data-name="Morphine" data-price="500">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="analgesic6">Ibuprofen (Rs600):</label>
+                    <input type="number" id="analgesic6" min="0" value="0">
+                    <img src="IMAGES/Ibuprofen.jpg" alt="Ibuprofen">
+                    <button class="add-to-cart" data-name="Ibuprofen" data-price="600">Add to Cart</button>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="phone-number">Phone Number:</label>
-                <input type="tel" id="phone-number" name="phone-number" required>
+            <div class="category">
+                <h2>Antibiotics</h2>
+                <div class="medicine-item">
+                    <label for="antibiotic1">Amoxicillin (Rs6750):</label>
+                    <input type="number" id="antibiotic1" min="0" value="0">
+                    <img src="IMAGES/Amoxicillin.jpg" alt="Amoxicillin">
+                    <button class="add-to-cart" data-name="Amoxicillin" data-price="6750">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antibiotic2">Ciprofloxacin (Rs1500):</label>
+                    <input type="number" id="antibiotic2" min="0" value="0">
+                    <img src="IMAGES/Ciprofloxacin.jpg" alt="Ciprofloxacin">
+                    <button class="add-to-cart" data-name="Ciprofloxacin" data-price="1500">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antibiotic3">Azithromycin (Rs900):</label>
+                    <input type="number" id="antibiotic3" min="0" value="0">
+                    <img src="IMAGES/Azithromycin.jpg" alt="Azithromycin">
+                    <button class="add-to-cart" data-name="Azithromycin" data-price="900">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antibiotic4">Doxycycline (Rs700):</label>
+                    <input type="number" id="antibiotic4" min="0" value="0">
+                    <img src="IMAGES/Doxycycline.jpg" alt="Doxycycline">
+                    <button class="add-to-cart" data-name="Doxycycline" data-price="700">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antibiotic5">Cephalexin (Rs450):</label>
+                    <input type="number" id="antibiotic5" min="0" value="0">
+                    <img src="IMAGES/Cephalexin.jpg" alt="Cephalexin">
+                    <button class="add-to-cart" data-name="Cephalexin" data-price="450">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antibiotic6">Metronidazole (Rs500):</label>
+                    <input type="number" id="antibiotic6" min="0" value="0">
+                    <img src="IMAGES/Metronidazole.jpg" alt="Metronidazole">
+                    <button class="add-to-cart" data-name="Metronidazole" data-price="500">Add to Cart</button>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="medicine">Select Medicine:</label>
-                <select id="medicine" name="medicine" required>
-                    <option value="">Select Medicine</option>
-                    <option value="aspirin">Aspirin</option>
-                    <option value="ibuprofen">Ibuprofen</option>
-                    <option value="paracetamol">Paracetamol</option>
-                    <option value="Acetaminophen">Acetaminophen</option>
-                    <option value="Ibuprofen">Ibuprofen</option>
-                    <option value="Naproxen">Naproxen</option>
-                    <option value="Diphenhydramine">Diphenhydramine</option>
-                    <option value="amoxicillin">Amoxicillin</option>
+            <div class="category">
+                <h2>Antidepressants</h2>
+                <div class="medicine-item">
+                    <label for="antidepressant1">Fluoxetine (Rs1900):</label>
+                    <input type="number" id="antidepressant1" min="0" value="0">
+                    <img src="IMAGES/Fluoxetine.jpg" alt="Fluoxetine">
+                    <button class="add-to-cart" data-name="Fluoxetine" data-price="1900">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antidepressant2">Sertraline (Rs1500):</label>
+                    <input type="number" id="antidepressant2" min="0" value="0">
+                    <img src="IMAGES/Sertraline.jpg" alt="Sertraline">
+                    <button class="add-to-cart" data-name="Sertraline" data-price="1500">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antidepressant3">Citalopram (Rs1500):</label>
+                    <input type="number" id="antidepressant3" min="0" value="0">
+                    <img src="IMAGES/Citalopram.jpg" alt="Citalopram">
+                    <button class="add-to-cart" data-name="Citalopram" data-price="1500">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antidepressant4">Escitalopram (Rs1000):</label>
+                    <input type="number" id="antidepressant4" min="0" value="0">
+                    <img src="IMAGES/Escitalopram.jpg" alt="Escitalopram">
+                    <button class="add-to-cart" data-name="Escitalopram" data-price="1000">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antidepressant5">Venlafaxine (Rs2300):</label>
+                    <input type="number" id="antidepressant5" min="0" value="0">
+                    <img src="IMAGES/Venlafaxine.jpg" alt="Venlafaxine">
+                    <button class="add-to-cart" data-name="Venlafaxine" data-price="2300">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antidepressant6">Amitriptyline (Rs3100):</label>
+                    <input type="number" id="antidepressant6" min="0" value="0">
+                    <img src="IMAGES/Amitriptyline.jpg" alt="Amitriptyline">
+                    <button class="add-to-cart" data-name="Amitriptyline" data-price="3100">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>Antihistamines</h2>
+                <div class="medicine-item">
+                    <label for="antihistamine1">Diphenhydramine (Rs2100):</label>
+                    <input type="number" id="antihistamine1" min="0" value="0">
+                    <img src="IMAGES/Diphenhydramine.png" alt="Diphenhydramine">
+                    <button class="add-to-cart" data-name="Diphenhydramine " data-price="2100">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihistamine2">Loratadine (Rs2500):</label>
+                    <input type="number" id="antihistamine2" min="0" value="0">
+                    <img src="IMAGES/Loratadine.jpg" alt="Loratadine">
+                    <button class="add-to-cart" data-name="Loratadine" data-price="2500">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihistamine3">Fexofenadine (Rs600):</label>
+                    <input type="number" id="antihistamine3" min="0" value="0">
+                    <img src="IMAGES/Fexofenadine.jpg" alt="Fexofenadine">
+                    <button class="add-to-cart" data-name="Fexofenadine" data-price="600">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihistamine4">Chlorpheniramine (Rs2050):</label>
+                    <input type="number" id="antihistamine4" min="0" value="0">
+                    <img src="IMAGES/Chlorpheniramine.jpg" alt="Chlorpheniramine">
+                    <button class="add-to-cart" data-name="Chlorpheniramine" data-price="2050">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihistamine4">Ranitidine (Rs2150):</label>
+                    <input type="number" id="antihistamine4" min="0" value="0">
+                    <img src="IMAGES/Cephalexin.jpg" alt="Ranitidine">
+                    <button class="add-to-cart" data-name="Ranitidine" data-price="2150">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihistamine4">Doxylamine (Rs950):</label>
+                    <input type="number" id="antihistamine4" min="0" value="0">
+                    <img src="IMAGES/Doxycycline.jpg" alt="Doxylamine">
+                    <button class="add-to-cart" data-name="Doxylamine" data-price="950">Add to Cart</button>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Antihypertensives</h2>
+                <div class="medicine-item">
+                    <label for="antihypertensive1">Lisinopril (Rs400):</label>
+                    <input type="number" id="antihypertensive1" min="0" value="0">
+                    <img src="IMAGES/Lisinopril.jpg" alt="Lisinopril">
+                    <button class="add-to-cart" data-name="Lisinopril" data-price="400">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihypertensive2">Losartan (Rs2100):</label>
+                    <input type="number" id="antihypertensive2" min="0" value="0">
+                    <img src="IMAGES/Losartan.jpg" alt="Losartan">
+                    <button class="add-to-cart" data-name="Losartan " data-price="2100">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihypertensive3">Amlodipine (Rs1200):</label>
+                    <input type="number" id="antihypertensive3" min="0" value="0">
+                    <img src="IMAGES/Amlodipine.jpg" alt="Amlodipine">
+                    <button class="add-to-cart" data-name="Amlodipine " data-price="1200">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihypertensive4">Metoprolol (Rs1300):</label>
+                    <input type="number" id="antihypertensive4" min="0" value="0">
+                    <img src="IMAGES/Metoprolol.jpg" alt="Metoprolol">
+                    <button class="add-to-cart" data-name="Metoprolol" data-price="1300">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihypertensive4">Clonidine (Rs800):</label>
+                    <input type="number" id="antihypertensive4" min="0" value="0">
+                    <img src="IMAGES/Chlorpheniramine.jpg" alt="Clonidine">
+                    <button class="add-to-cart" data-name="Clonidine" data-price="800">Add to Cart</button>
+                </div>
+                <div class="medicine-item">
+                    <label for="antihypertensive4">Furosemide (Rs500):</label>
+                    <input type="number" id="antihypertensive4" min="0" value="0">
+                    <img src="IMAGES/Fexofenadine.jpg" alt="Furosemide">
+                    <button class="add-to-cart" data-name="Furosemide" data-price="500">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="cart-section">
+            <h2>Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+            <h3>Overall Total: <span id="overall-total">$0.00</span></h3>
+        
+            <div class="button-container">
+                <button id="buy-now">Buy Now</button>
+                <button id="add-to-favourites">Add to Favourites</button>
+                <button id="apply-favourites">Apply Favourites</button>
+            </div>
             
-                </select>
-            </div>
+            
+            <script src="scripts/Pharmacy.js"></script>
+        </body>
+        </html>
 
-            <div class="form-group">
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="100" required>
-            </div>
 
-            <div class="form-group">
-                <label for="notes">Additional Notes:</label>
-                <textarea id="notes" name="notes" rows="4" placeholder="Any additional Information..."></textarea>
-            </div>
-
-            <div class="form-buttons">
-                <button type="reset" class="clear-button">Clear Form</button>
-                <button type="submit" class="submit-button">Submit</button>
-            </div>
-        </form>
-    </section>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <img src="IMAGES/logo.png" alt="DOCMED Hospitals Logo" class="footer-logo">
-                <h3>DOCMED Hospitals, Sri Lanka</h3>
-                <p>DOCMED Hospitals has embarked on a digital journey to be Sri Lanka’s No.1 Smart Hospital. We have already introduced many innovative digital health solutions including Telemedicine, Online pharmacy, Online laboratory portal, and Tele physiotherapy.</p>
-            </div>
-            <div class="footer-right">
-                <h3>Contact us</h3>
-                <ul>
-                    <li><span class="icon">&#x260E;</span> 0117 888 888</li>
-                    <li><span class="icon">&#x2709;</span> info@DOCMED.com</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
